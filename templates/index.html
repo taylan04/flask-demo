@@ -1,0 +1,9 @@
+<form method="post" action="/add">
+    <input type="text" name="nome" placeholder="Nome">
+    <button type="submit">Adicionar</button>
+</form>
+<ul>
+    {% for u in usuarios %}
+    <li>{{u.nome}}</li>
+    {% endfor %}
+</ul>
